@@ -1,0 +1,23 @@
+button,
+div,
+form,
+input {
+  margin: 10px;
+}
+
+#animal-button{
+    background-color:#827E69;
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+}
+
+
+html{
+	background-color:#32746D;
+	color:#011502;
+}
+
+#animal-form{
+    float: right;
+}
