@@ -1,6 +1,6 @@
 # GifTastic
 
-Find your favorite animal Gif by Using the Giphy API! Every time that the user choose one of the preset button with an animal or search for an animal in the search bar a new button appears with the animal that we type and the web page generates 10 gifs at a time .
+Find your favorite animal Gif by Using the Giphy API! Every time that the user choose one of the preset button with an animal or search for an animal in the search bar a new button appears with the animal that we typed and the web page by Using the Giphy API generates 10 gifs at a time .
 
 # How does it work?
 The program uses ajax and jQuery to call the Giphy API. It then uses JavaScript and jQuery to change the HTML of the page.
