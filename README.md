@@ -1,6 +1,6 @@
 # GifTastic
 
-Using the Giphy API, this web page generates 10 gifs at a time based on my predefined chosen topics, or a topic chosen by the user.
+Find your favorite animal Gif by Using the Giphy API! Every time that the user choose one of the preset button with an animal or search for an animal in the search bar a new button appears with the animal that we type and the web page generates 10 gifs at a time .
 
 # How does it work?
 The program uses ajax and jQuery to call the Giphy API. It then uses JavaScript and jQuery to change the HTML of the page.
@@ -11,7 +11,6 @@ The user will see the rating of each gif and a download icon that they can use t
 The images can be toggled to show or hide their animations by clicking on the images themselves.
 Each time images are generated, they will be in groups of 10 and the most recent will be at the top of the page.
 The page is also responsive and can be accessed via mobile, tablet or desktop.
-Who will use this repo or project?
-Anyone who has a passion for something silly, something cute, or something strange - and with a decent amount of free time on their hands.
+
 <hr>
 
