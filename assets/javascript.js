@@ -3,8 +3,7 @@ $(document).ready(function(){
 
 
 
-      // =====================================RENDER BUTTONs==================================================//
-
+      // RENDER BUTTONs //
 
 
       function renderButtons() {
@@ -23,31 +22,25 @@ $(document).ready(function(){
         }
       }
 
-      // ======================================================================================================//
-
-      // This function handles events where the add movie button is clicked
+      // This function handles events where the add movie button is clicked.
 
       $("#add-animal").on("click", function (event) {
         event.preventDefault();
 
-        // Write code to grab the text the user types into the input field
-        // Write code to add the new movie into the movies array
         topics.push($('#animal-input').val());
-        // The renderButtons function is called, rendering the list of movie buttons
+        // Rendering the list of movie buttons
         renderButtons();
       });
 
       // Calling the renderButtons function to display the initial list of movies
       renderButtons();
 
-//======================================PAUSE GIFF==============================================================//
+// PAUSE GIFF //
 
 $(".animal").on("click", function() {
-      // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+      
       var state = $(this).attr("data-state");
-      // If the clicked image's state is still, update its src attribute to what its data-animate value is.
-      // Then, set the image's data-state to animate
-      // Else set src to the data-still value
+     
       if (state === "still") {
         $(this).attr("src", $(this).attr("data-animate"));
         $(this).attr("data-state", "animate");
@@ -57,7 +50,7 @@ $(".animal").on("click", function() {
       }
     });
 
-    //===============================CREATE THE PAGE============================================================//
+    // CREATE THE PAGE //
 
       $(document).on("click", "#animal-button", function () {
 
@@ -100,16 +93,15 @@ $(".animal").on("click", function() {
             // Creating an element to hold the image
             var image = $("<img>").attr("src", results[i].images.fixed_height.url);
 
-//==============================================================================================================//
 
-//giving the image tag an src attribute of a property pulled off the result item
+
+   // giving the image tag an src attribute of a property pulled off the result item //
+
 	    				image.attr('src', results[i].images.fixed_height_still.url)
 		                    	.attr('data-still', results[i].images.fixed_height_still.url)
 		                    	.attr('data-animate', results[i].images.fixed_height.url)
 		                    	.attr('data-state', "still")
 		                    	.addClass("showImage");
-
-//==============================================================================================================//
 
             // Appending the image
             animalDiv.append(image);
@@ -122,7 +114,7 @@ $(".animal").on("click", function() {
         });
        });
 
-//====================Still and Animate Image =================================================================//
+// Still and Animate Image //
 
 	// Listens for a click on any image (dynamic)
 	// $('.showImage').on('click', function(){ --> won't work here
